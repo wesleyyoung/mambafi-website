@@ -12,16 +12,6 @@
     color: $soft-dark;
 }
 
-.ball {
-    height: 200px;
-    width: 200px;
-    border-radius: 100%;
-    background-image: url('../../assets/imgs/logo_200x200.png');
-    background-size: cover;
-    display: inline-block;
-    list-style: none;
-}
-
 .download-btn {
     width: 325px;
     height: 60px;
@@ -36,22 +26,15 @@
 }
 
 .ball-bg {
-    background-image: url('../../assets/imgs/logo3.png');
-    background-size: auto;
-    background-origin: border-box;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position-x: right;
-    background-position-y: center;
     text-align: center;
 }
 
 .floating-logo {
     position: absolute;
     z-index: 20;
-    font-weight: 100;
-    font-size: 45px;
     left: 40px;
+    top: 40px;
+    height: 66px;
 }
 
 .info-card {

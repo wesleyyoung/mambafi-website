@@ -32,7 +32,7 @@ export class ApiService {
 
   public downloadFile(url: string): void {
 
-    this.http.get('https://wesprodev.com/' + url, { responseType: 'blob' })
+    this.http.get('https://mambafi.com/' + url, { responseType: 'blob' })
       .toPromise()
       .then(blob => {
         saveAs(blob, 'MambaFi-Setup.exe');
