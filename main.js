@@ -9,16 +9,16 @@
         bodyParser = require('body-parser'),
         server = require('http').Server(app);
 
-    /*
+    
     const
-        privatekey = fs.readFileSync('/etc/letsencrypt/live/wesprodev.com/privkey.pem', 'utf8'),
-        certificate = fs.readFileSync('/etc/letsencrypt/live/wesprodev.com/cert.pem', 'utf8'),
-        ca = fs.readFileSync('/etc/letsencrypt/live/weprodev.com/fullchain.pem', 'utf8'),
+        privatekey = fs.readFileSync('/etc/letsencrypt/live/mambafi.com/privkey.pem', 'utf8'),
+        certificate = fs.readFileSync('/etc/letsencrypt/live/mambafi.com/cert.pem', 'utf8'),
+        ca = fs.readFileSync('/etc/letsencrypt/live/mambafi.com/fullchain.pem', 'utf8'),
         credentials = {
             key: privatekey,
             cert: certificate,
             ca: ca
-        };*/
+        };
 
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
