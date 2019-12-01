@@ -38,12 +38,8 @@
         console.log(`Listening on port ${app.get('PORT')}...`);
     });
 
-    /*
-
     https.createServer(credentials, app).listen(app.get('SECURE_PORT'), () => {
         console.log(`Listening on secure port ${app.get('SECURE_PORT')}...`);
     });
-
-    */
 
 })();
