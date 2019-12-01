@@ -23,7 +23,7 @@
     app.use(bodyParser.urlencoded({ extended: true }));
     app.use(bodyParser.json());
 
-    app.use('/', express.static(__dirname + '/dist/portfolio'));
+    app.use('/', express.static(__dirname + '/dist/mambafi-website'));
     app.use('/node_modules', express.static(__dirname + '/node_modules'));
 
     app.set('PORT', process.env.PORT || 80);
