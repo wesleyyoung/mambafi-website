@@ -13,6 +13,10 @@ export class DashboardComponent implements OnInit {
 
   constructor(private api: ApiService) { }
 
+  public download() {
+    this.api.downloadFile('downloadApp');
+  }
+
   ngOnInit() {
     this.api.isMobile.subscribe(isMobile => {
       this.isMobile = isMobile;
