@@ -1,0 +1,101 @@
+<div class="">
+    <!--<h1 class="floating-logo vibur white">Mamba<span class="primary">Fi</span></h1>-->
+    <mat-grid-list cols="12" rowHeight="750px" style="overflow-x: visible" gutterSize="0" class="soft-med-dark-bg">
+        <mat-grid-tile colspan="12" rowspan="1" class="ball-bg">
+            <div class="side-padding">
+                <h1 class="white hook-title">Few techs know how to use the command prompt, fewer want to.</h1>
+                <p class="white" style="">View passwords, export, and import
+                    Windows Wi-Fi profiles</p>
+                <button mat-raised-button color="accent" class="download-btn">Download For Windows 10 x64</button>
+                <p class="white">v0.1.0 (beta)</p>
+            </div>
+        </mat-grid-tile>
+    </mat-grid-list>
+</div>
+<div class="container">
+    <div class="content">
+        <mat-grid-list cols="12" rowHeight="90px" style="overflow-x: visible" gutterSize="0">
+            <mat-grid-tile [colspan]="isMobile ? 12 : 8" [rowspan]="isMobile ? 3 : 2">
+                <mat-card class="info-card">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon aria-hidden="false" aria-label="why">question_answer</mat-icon>
+                        </div>
+                        <mat-card-title>Why MambaFi?</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            If you have ever worked in commercial or residential IT, you'll know that Wi-Fi passwords are a
+                            pain in the ass. There isn't a good way to manage them for teams or personal use, meaning it
+                            can become an unecessary roadblock during service calls. MambaFi lets you view, explore,
+                            delete, import, and export your repository of Wi-Fi profiles so that you can easily distribute them
+                            to new computers and team members
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
+                <mat-card class="info-card">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon aria-hidden="false" aria-label="style">style</mat-icon>
+                        </div>
+                        <mat-card-title>Clean Design</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Crafted using the Material Design library. Not all Windows desktop apps have to look like
+                            PuTTY
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
+                <mat-card class="info-card">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon aria-hidden="false" aria-label="code">code</mat-icon>
+                        </div>
+                        <mat-card-title>Open Source</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Made with <a href="https://nodejs.org/">Node.js</a>, <a href="https://electronjs.org/">Electron</a>, and <a href="https://angular.io/">Angular 8</a>
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
+                <mat-card class="info-card">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon aria-hidden="false" aria-label="fast">speed</mat-icon>
+                        </div>
+                        <mat-card-title>Built For Speed</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            Export all of your known Wi-Fi connections and load them onto another computer, without ever
+                            opening up a command prompt
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+            <mat-grid-tile [colspan]="isMobile ? 12 : 4" rowspan="2">
+                <mat-card class="info-card">
+                    <mat-card-header>
+                        <div mat-card-avatar>
+                            <mat-icon aria-hidden="false" aria-label="active">build</mat-icon>
+                        </div>
+                        <mat-card-title>In Active Development</mat-card-title>
+                    </mat-card-header>
+                    <mat-card-content>
+                        <p>
+                            More features and updates will be coming. Have an idea or a request? <a href="https://wesprodev.com">Contact me</a>
+                        </p>
+                    </mat-card-content>
+                </mat-card>
+            </mat-grid-tile>
+        </mat-grid-list>
+    </div>
+</div>

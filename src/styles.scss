@@ -1,1 +1,183 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/theming';
+@include mat-core();
+
+$soft-dark: #212121;
+$med-dark: rgb(20, 20, 20);
+$dark-dark: #000000;
+
+$primary-color: #F97B4F;
+$primary-txt-color: #212121;
+
+$accent-color: #0682A6;
+$accent-txt-color: whitesmoke;
+
+$warn-color: #D1193E;
+$warn-txt-color: whitesmoke;
+
+$pro-primary: (
+    50: $primary-color,
+    100: $primary-color,
+    200: $primary-color,
+    300: $primary-color,
+    400: $primary-color,
+    500: $primary-color,
+    600: $primary-color,
+    700: $primary-color,
+    800: $primary-color,
+    900: $primary-color,
+    A100: $primary-color,
+    A200: $primary-color,
+    A400: $primary-color,
+    A700: $primary-color,
+    contrast: (
+      50: $primary-txt-color,
+      100: $primary-txt-color,
+      200: $primary-txt-color,
+      300: $primary-txt-color,
+      400: $primary-txt-color,
+      500: $primary-txt-color,
+      600: $primary-txt-color,
+      700: $primary-txt-color,
+      800: $primary-txt-color,
+      900: $primary-txt-color,
+      A100: $primary-txt-color,
+      A200: $primary-txt-color,
+      A400: $primary-txt-color,
+      A700: $primary-txt-color,
+    )
+  );
+$pro-accent: (
+  50: $accent-color,
+    100: $accent-color,
+    200: $accent-color,
+    300: $accent-color,
+    400: $accent-color,
+    500: $accent-color,
+    600: $accent-color,
+    700: $accent-color,
+    800: $accent-color,
+    900: $accent-color,
+    A100: $accent-color,
+    A200: $accent-color,
+    A400: $accent-color,
+    A700: $accent-color,
+    contrast: (
+      50: $accent-txt-color,
+      100: $accent-txt-color,
+      200: $accent-txt-color,
+      300: $accent-txt-color,
+      400: $accent-txt-color,
+      500: $accent-txt-color,
+      600: $accent-txt-color,
+      700: $accent-txt-color,
+      800: $accent-txt-color,
+      900: $accent-txt-color,
+      A100: $accent-txt-color,
+      A200: $accent-txt-color,
+      A400: $accent-txt-color,
+      A700: $accent-txt-color,
+    )
+  );
+  $pro-warn: (
+    50: $warn-color,
+    100: $warn-color,
+    200: $warn-color,
+    300: $warn-color,
+    400: $warn-color,
+    500: $warn-color,
+    600: $warn-color,
+    700: $warn-color,
+    800: $warn-color,
+    900: $warn-color,
+    A100: $warn-color,
+    A200: $warn-color,
+    A400: $warn-color,
+    A700: $warn-color,
+    contrast: (
+      50: $warn-txt-color,
+      100: $warn-txt-color,
+      200: $warn-txt-color,
+      300: $warn-txt-color,
+      400: $warn-txt-color,
+      500: $warn-txt-color,
+      600: $warn-txt-color,
+      700: $warn-txt-color,
+      800: $warn-txt-color,
+      900: $warn-txt-color,
+      A100: $warn-txt-color,
+      A200: $warn-txt-color,
+      A400: $warn-txt-color,
+      A700: $warn-txt-color,
+    )
+  );
+
+$mambafi-website-primary: mat-palette($pro-primary);
+
+$mambafi-website-accent: mat-palette($pro-accent);
+
+$mambafi-website-warn: mat-palette($pro-warn);
+
+$mambafi-website-theme: mat-light-theme($mambafi-website-primary, $mambafi-website-accent, $mambafi-website-warn);
+
+@include angular-material-theme($mambafi-website-theme);
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.full-height-container {
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.soft-dark-bg {
+    background-color: $soft-dark;
+}
+
+.soft-med-dark-bg {
+  background-image: linear-gradient(to left, $soft-dark, $dark-dark);
+}
+
+.primary-accent-bg {
+    background-image: linear-gradient(to left, $primary-color, $accent-color);
+}
+
+.primary-warn-bg {
+    background-image: linear-gradient(to left, $primary-color, $warn-color);
+}
+
+.vibur {
+    font-family: Vibur !important;
+}
+
+.white {
+    color: whitesmoke;
+}
+
+.primary {
+  color: $primary-color;
+}
+
+.content {
+  width: 100%;
+  align-self: center;
+  max-width: 1200px;
+  padding-top: 80px;
+  display: inline-block;
+  text-align: auto;
+  overflow: visible;
+}
+
+.container {
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  width: 100%;
+  display: inline-block;
+}
+
+.side-padding {
+  padding: 0 50px;
+}

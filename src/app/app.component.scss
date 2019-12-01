@@ -1,0 +1,9 @@
+@import '../styles.scss';
+
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 15;
+    background-color: $soft-dark;
+}
